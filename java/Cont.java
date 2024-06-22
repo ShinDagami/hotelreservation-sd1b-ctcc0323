@@ -1,6 +1,7 @@
 
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
+import javax.swing.JLabel;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -27,11 +28,16 @@ public class Cont extends javax.swing.JFrame {
      */
     public Cont() {
         initComponents();
-        this.setTitle("Reciept");
+        this.setTitle("Receipt");
+        haha = new JLabel();
     }
      public void setLabel2Text(String text) {
         jLabel2.setText(text);
     }
+    public void setlabel4 (String text1) {
+        haha.setText(text1);
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -50,7 +56,7 @@ public class Cont extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         name = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        haha = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -66,8 +72,8 @@ public class Cont extends javax.swing.JFrame {
 
         name.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel4.setText("Go to the Hotel at exact time");
+        haha.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        haha.setText("Go to hotel at 9am.");
 
         jLabel5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jLabel5.setText("Prepare the exact amount");
@@ -95,7 +101,7 @@ public class Cont extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(haha, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGap(3, 3, 3)
                             .addComponent(jLabel7)
@@ -123,7 +129,7 @@ public class Cont extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(haha, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -145,6 +151,7 @@ public class Cont extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -191,14 +198,16 @@ public class Cont extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel haha;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JLabel name;
     // End of variables declaration//GEN-END:variables
+
+    
 }

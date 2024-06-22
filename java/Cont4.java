@@ -27,7 +27,7 @@ public class Cont4 extends javax.swing.JFrame {
      */
     public Cont4() {
         initComponents();
-        this.setTitle("Reciept");
+        this.setTitle("Receipt");
     }
      public void setLabel2Text(String text) {
         jLabel2.setText(text);
@@ -145,6 +145,7 @@ public class Cont4 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

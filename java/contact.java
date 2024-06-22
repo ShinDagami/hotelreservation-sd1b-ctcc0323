@@ -117,13 +117,27 @@ public class contact extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
             String pr1Text = test.getInstance().getPr1().getText();
+            String timeText = test.getInstance().getTime().getText();
             Cont contInstance = new Cont();
+            
+           contInstance.setlabel4(pr1Text);
             contInstance.setLabel2Text(pr1Text);
+            
+            
+            test tes = new test();
+            
+            
+            
+            
+            
+            
+            
             contInstance.name.setText(neym.getText());
             contInstance.setVisible(true);
             
